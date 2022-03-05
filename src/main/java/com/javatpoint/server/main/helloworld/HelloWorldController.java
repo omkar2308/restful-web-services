@@ -36,7 +36,7 @@ public class HelloWorldController {
     @GetMapping(path = "/hello-world/path-variable/{name}")
     public HelloWorldBean helloWorldPathVariable(@PathVariable String name) {
        // System.out.println("in controller");
-         System.out.println("in testing mode");
+        // System.out.println("in testing mode");
         return new HelloWorldBean(String.format("Hello World, %s", name));    //%s replace the name
     }
 
