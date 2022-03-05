@@ -35,8 +35,6 @@ public class HelloWorldController {
 //hello-world/path-variable/javatpoint
     @GetMapping(path = "/hello-world/path-variable/{name}")
     public HelloWorldBean helloWorldPathVariable(@PathVariable String name) {
-
-
         return new HelloWorldBean(String.format("Hello World, %s", name));    //%s replace the name
     }
 
